@@ -79,7 +79,6 @@ function CountryDetail() {
     continents,
     maps,
     car,
-    coatOfArms,
     startOfWeek,
     independent,
     unMember,
