@@ -1,0 +1,150 @@
+.country-detail-page {
+    padding: 40px 0;
+  }
+  
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+  }
+  
+  .back-button:hover {
+    background-color: var(--card-border);
+  }
+  
+  .country-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .country-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .country-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .flag-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: visible;
+  }
+  
+  .country-flag {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+  
+  
+  .coat-of-arms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .coat-of-arms img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .country-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .info-section {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+  
+  .info-section h2 {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--card-border);
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .detail-item {
+    margin-bottom: 8px;
+  }
+  
+  .detail-label {
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+  
+  .border-countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .border-country-btn {
+    padding: 8px 15px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .border-country-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+  }
+  
+  .map-link {
+    grid-column: span 2;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 992px) {
+    .country-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .country-header h1 {
+      font-size: 2rem;
+    }
+  
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .map-link {
+      grid-column: span 1;
+    }
+  }
+  

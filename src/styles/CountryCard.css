@@ -1,0 +1,76 @@
+.country-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .country-card.grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .country-card.list {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+  }
+  
+  .country-card.list .flag-container {
+    width: 250px;
+    min-width: 250px;
+    height: 100%;
+  }
+  
+  .flag-container {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+  }
+  
+  .flag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .country-info {
+    padding: 20px;
+  }
+  
+  .country-name {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .country-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .country-card.list {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .country-card.list .flag-container {
+      width: 100%;
+      height: 160px;
+    }
+  }
+  

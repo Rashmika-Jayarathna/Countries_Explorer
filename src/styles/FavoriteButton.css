@@ -1,0 +1,46 @@
+.favorite-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border);
+    background-color: var(--card-bg);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+  }
+  
+  .favorite-button:hover {
+    background-color: var(--card-border);
+  }
+  
+  .favorite-button.active {
+    background-color: #fef3c7;
+    border-color: #fbbf24;
+    color: #92400e;
+  }
+  
+  .favorite-button.active:hover {
+    background-color: #fde68a;
+  }
+  
+  .star-icon {
+    font-size: 1.2rem;
+    color: #fbbf24;
+  }
+  
+  @media (max-width: 576px) {
+    .button-text {
+      display: none;
+    }
+  
+    .favorite-button {
+      padding: 10px;
+    }
+  
+    .star-icon {
+      margin: 0;
+    }
+  }
+  

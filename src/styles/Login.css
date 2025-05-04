@@ -1,0 +1,122 @@
+.login-page {
+    padding: 60px 0;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+  }
+  
+  .auth-container {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .auth-header {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid var(--card-border);
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .globe-icon {
+    font-size: 40px;
+  }
+  
+  .auth-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .auth-header p {
+    color: var(--secondary-color);
+  }
+  
+  .auth-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--card-border);
+  }
+  
+  .tab-btn {
+    flex: 1;
+    padding: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    transition: var(--transition);
+  }
+  
+  .tab-btn.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  .auth-content {
+    padding: 30px;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    padding: 12px;
+    border: 1px solid var(--input-border);
+    border-radius: var(--border-radius);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+  }
+  
+  .error-text {
+    color: var(--error-color);
+    font-size: 0.9rem;
+  }
+  
+  .auth-footer {
+    padding: 20px 30px;
+    text-align: center;
+    border-top: 1px solid var(--card-border);
+  }
+  
+  .guest-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  .guest-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,124 @@
+.profile-page {
+    padding: 40px 0;
+  }
+  
+  .profile-header {
+    margin-bottom: 30px;
+  }
+  
+  .profile-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .profile-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+  }
+  
+  .user-info {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar-placeholder {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .user-info h2 {
+    margin-bottom: 5px;
+  }
+  
+  .user-email {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+  
+  .stats {
+    width: 100%;
+    padding: 15px 0;
+    margin: 20px 0;
+    border-top: 1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .stat-label {
+    color: var(--secondary-color);
+  }
+  
+  .favorites-section {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+  }
+  
+  .favorites-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--card-border);
+  }
+  
+  .star-icon {
+    color: #fbbf24;
+  }
+  
+  .favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .no-favorites {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .no-favorites p {
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+  }
+  
+  @media (max-width: 992px) {
+    .profile-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .user-info {
+      padding: 20px;
+    }
+  }
+  
