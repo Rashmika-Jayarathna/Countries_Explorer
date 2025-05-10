@@ -3,6 +3,8 @@
     min-height: calc(100vh - 200px);
     display: flex;
     align-items: center;
+    color: var(--text-color);
+    background-color: var(--background-color);
   }
   
   .auth-container {
