@@ -5,6 +5,8 @@
     top: 0;
     z-index: 100;
     transition: var(--transition);
+    color: var(--text-color);
+    
   }
   
   .header-content {

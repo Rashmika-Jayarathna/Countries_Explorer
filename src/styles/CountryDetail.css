@@ -1,5 +1,7 @@
 .country-detail-page {
     padding: 40px 0;
+    color: var(--text-color); /* Add this line */
+    background-color: var(--background-color);
   }
   
   .back-button {

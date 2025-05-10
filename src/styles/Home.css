@@ -1,5 +1,8 @@
 .home-page {
     padding-bottom: 40px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+
   }
   
   .hero-section {

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import "../styles/FavoriteButton.css"
+import toast from 'react-hot-toast'
 
 function FavoriteButton({ countryCode, countryName }) {
   const [isFavorite, setIsFavorite] = useState(false)
@@ -34,13 +35,13 @@ function FavoriteButton({ countryCode, countryName }) {
       const updatedFavorites = favorites.filter((code) => code !== countryCode)
       localStorage.setItem("favoriteCountries", JSON.stringify(updatedFavorites))
       setIsFavorite(false)
-      alert(`${countryName} has been removed from your favorites`)
+      toast.success(`${countryName} has been removed from your favorites`)
     } else {
       // Add to favorites
       const updatedFavorites = [...favorites, countryCode]
       localStorage.setItem("favoriteCountries", JSON.stringify(updatedFavorites))
       setIsFavorite(true)
-      alert(`${countryName} has been added to your favorites`)
+      toast.success(`${countryName} has been added to your favorites`)
     }
   }
 
