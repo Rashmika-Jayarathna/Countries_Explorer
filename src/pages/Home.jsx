@@ -83,8 +83,8 @@ function Home() {
     <div className="home-page">
       <div className="hero-section">
         <div className="container">
-          <h1>Explore Countries Around the World</h1>
-          <p>Discover information about countries, their flags, populations, languages, and more.</p>
+          <h1>Unlock the World's Wonders</h1>
+          <p>Dive deep into comprehensive country profiles featuring detailed maps, demographic insights, cultural traditions, and up-to-date statistics for researchers and curious minds alike.</p>
         </div>
       </div>
 
